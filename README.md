@@ -10,7 +10,7 @@ The app aims to include:
 - An area for saved recipes which can be referred back to later
 
 ## App flow
-(![Alt text](https://ibb.co/JRVYjps "API Routes") 
+[![HclMPte.md.png](https://iili.io/HclMPte.md.png)](https://freeimage.host/i/HclMPte)
 
 
 https://ibb.co/JRVYjps
