@@ -10,9 +10,9 @@ The app aims to include:
 - An area for saved recipes which can be referred back to later
 
 ## App flow
-![](/c/Users/Holly/Documents/Codeop1/Eatasap-web-app/updatedappflow.png)
+(![Alt text](https://ibb.co/JRVYjps "API Routes") 
 
 
-
+https://ibb.co/JRVYjps
 
 _This is a student project that was created at [CodeOp](http://codeop.tech), a full stack development bootcamp in Barcelona._
