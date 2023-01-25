@@ -1,10 +1,10 @@
-import App from "./App";
+
 import style from "./App.css";
 
 
 const Recipe = ({title, image, ingredients}) => {
     return (
-        <div className={style.recipe}>
+        <div className="recipe">
             <h1>{title}</h1>
             <ol>
                 {ingredients.map (ingredient => (
@@ -13,7 +13,7 @@ const Recipe = ({title, image, ingredients}) => {
                 </ol>
                 
 
-            <img className={style.image} src={image} alt="" />
+            <img className={image} src={image} alt="" />
         </div>
     )
 }
