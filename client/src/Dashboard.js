@@ -1,14 +1,10 @@
 
 import { useState } from "react";
 
-export default function (props) {
+const Dashboard = () => {
     const [authMode, setAuthMode] = useState("signin")
 
-    const changeAuthMode = () => {
-        setAuthMode(authMode === "signin" ? "signup" : "signin")
-    }
-
-    if (authMode === "signin") {
+    
     return (
         <div className="Dash-form-container">
             <form className="Dash-form">
@@ -16,6 +12,7 @@ export default function (props) {
                 <h3 classname="Dash-form-title">Sign In</h3>
                 <label>Email Address</label>
                 <input
+                name="email"
                 type="email"
                 placeholder="Enter email"
                 />
@@ -23,6 +20,7 @@ export default function (props) {
                 <div>
                     <label>Password</label>
                     <input
+                    name="password"
                     type="password"
                     placeholder="Enter Password"
                     />
@@ -40,7 +38,7 @@ export default function (props) {
     )
 
 }
-
+/*
     return (
         <div className ="Dash-form-container">
             <form className="Dash-form">
@@ -89,5 +87,5 @@ export default function (props) {
             </form>
         </div>
     )
-}
+*/
 
