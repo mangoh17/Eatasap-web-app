@@ -1,6 +1,4 @@
 
-import style from "./App.css";
-
 
 const Recipe = ({title, image, ingredients}) => {
     return (

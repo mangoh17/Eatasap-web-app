@@ -1,9 +1,16 @@
-h1 {}
+@tailwind base;
 
-.search-box {}
+@tailwind components;
 
-.search-bar {}
+@tailwind utilities;
 
-.search-button {
-  
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: center;
+    
+}
+
+input {
+    border: 0mm;
 }

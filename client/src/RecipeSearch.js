@@ -1,6 +1,5 @@
-import App from "./App";
-import Recipe from "./Recipe"
-import { useState, useEffect } from 'react';
+import Recipe from './Recipe'
+import { useState, useEffect} from 'react';
 import "./App.css";
 
 const Form = () => {
