@@ -15,14 +15,14 @@ const App = () => {
   
   return (
     <div className="App">
-   {/* <BrowserRouter>   
+   {<BrowserRouter>   
     <Routes>
-      <Route path="/" element={<App />} />
+     
       <Route path="/search" element={<RecipeSearch />} />
       <Route path="/community" element={<RecipeForm />} /> 
 
     </Routes>
-    </BrowserRouter>   */}
+    </BrowserRouter>   }
 
     <Nav></Nav>
      
