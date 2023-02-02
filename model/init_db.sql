@@ -6,5 +6,4 @@ CREATE TABLE recipes (
     ingredients VARCHAR(255) NOT NULL
 );
 
-INSERT INTO recipes (title, ingredients)
-   VALUES ('Beans on toast'), ('1. Beans, 2. Bread, 3. Brown sauce')
+INSERT INTO recipes (title, ingredients) VALUES ('Beans on toast', '1. Beans, 2. Bread, 3. Brown sauce');
