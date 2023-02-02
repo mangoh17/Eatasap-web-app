@@ -23,7 +23,7 @@ const RecipeForm = () => {
         fetchRecipes()
     }
      
-    
+
     );
 
     const addRecipe = async (recipe) => {

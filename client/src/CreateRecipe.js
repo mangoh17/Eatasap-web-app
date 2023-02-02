@@ -10,7 +10,7 @@ const CreateRecipe = () => {
 
     return (
         <RecipeForm initialValues={formValues}>
-            
+
         </RecipeForm>
     )
 
