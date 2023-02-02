@@ -40,7 +40,8 @@ const RecipeForm = () => {
     }  catch(error) {
         setError('Oops...something went wrong')
 
-    };
+    } 
+};
 
     const deleteRecipe = async (id) =>{
         try {
@@ -110,7 +111,7 @@ const RecipeForm = () => {
             </form>
         </div>
     )
-}
+
 }
 
 export default RecipeForm

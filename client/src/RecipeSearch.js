@@ -1,4 +1,4 @@
-import Recipe from '. /Recipe'
+import Recipe from './Recipe'
 import { useState, useEffect} from 'react';
 import "./App.css";
 
@@ -37,6 +37,7 @@ const Form = () => {
 
     return (
         <div className="search">
+        
         <form className="search-box" onSubmit={getSearch}>
         <input className="search-bar" 
         type="text" 

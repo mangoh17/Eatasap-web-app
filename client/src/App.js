@@ -19,12 +19,14 @@ const App = () => {
     <Routes>
      
       <Route path="/search" element={<RecipeSearch />} />
-      <Route path="/community" element={<RecipeForm />} /> 
+      <Route path="/community" element={<RecipeForm />} />
 
     </Routes>
     </BrowserRouter>   }
 
     <Nav></Nav>
+
+   
      
      
     
