@@ -28,9 +28,13 @@ const App = () => {
 
    
      
+
+     <RecipeSearch></RecipeSearch>
      
     
       <h1 className="text-green-600">Eat ASAP app</h1>
+
+      <RecipeForm></RecipeForm>
     
 
     

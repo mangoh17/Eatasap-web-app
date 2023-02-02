@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add migrate
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add cors
 
 PATH: 
   C:\Users\Holly\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Holly\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\Users\Holly\AppData\Local\Microsoft\WindowsApps;C:\Users\Holly\AppData\Local\Programs\Microsoft VS Code\bin;C:\Exercism;C:\Users\Holly\AppData\Local\Yarn\bin;C:\Users\Holly\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -23,7 +23,8 @@ npm manifest:
     "version": "0.0.0",
     "private": true,
     "scripts": {
-      "start": "nodemon ./bin/www"
+      "start": "nodemon ./bin/www",
+      "migrate": "node ./model/database.js"
     },
     "dependencies": {
       "cookie-parser": "~1.4.4",
