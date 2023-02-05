@@ -5,14 +5,14 @@ var db = require("../model/helper");
 /* GET users listing. */
 router.get('/', async (req, res, next) => {
   try {
-    const response = await db(`SELECT * FROM recipes `);
-    const recipe = response.data;
+     const response = await db(`SELECT * FROM recipes; `);
+    const recipe = response.data[0];
 
     if (!recipe) {
       res.status(404).send();
       return;
     }
-    res.status(200).send({recipe})
+    res.status(200).send(response)
     
   } catch (err) {
     res.status(500).send(err);

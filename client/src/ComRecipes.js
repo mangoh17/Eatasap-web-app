@@ -2,7 +2,7 @@ import RecipeForm from "./RecipeForm";
 import {useState, useEffect} from "react";
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5050'
+const BASE_URL = 'http://localhost:5050/api'
 
 const ComRecipes = () => {
 
@@ -11,8 +11,7 @@ const ComRecipes = () => {
     const [error, setError] = useState();
 
     const getRecipes = async () => {
-      const response = await axios
-      (`/recipes`,{
+      const response = await axios(`${BASE_URL}/recipes`,{
         method: 'GET',
         headers: {
           "Content-Type": "application/json"
