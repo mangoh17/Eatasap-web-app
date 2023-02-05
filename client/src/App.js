@@ -17,19 +17,20 @@ const App = () => {
   
   return (
     <div className="App">
-      
+      <Header></Header>
    <BrowserRouter>   
     <Routes>
      
       <Route path="/search" element={<RecipeSearch />} />
-      <Route path="/community" element={<RecipeForm />} />
+      <Route path="/addrecipe" element={<RecipeForm />} />
+      <Route path="browse" element={<ComRecipes />} />
 
     </Routes>
     </BrowserRouter> 
     
-    <Header></Header>
+    
    
-  <ComRecipes></ComRecipes>
+ 
 
    
 

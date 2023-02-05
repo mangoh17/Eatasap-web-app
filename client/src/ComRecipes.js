@@ -1,4 +1,4 @@
-import RecipeForm from "./RecipeForm";
+
 import {useState, useEffect} from "react";
 import axios from 'axios';
 
@@ -7,7 +7,7 @@ const BASE_URL = 'http://localhost:5050/api'
 const ComRecipes = () => {
 
     const [recipes, setRecipes] = useState([]);
-    const [recipe, setRecipe] = useState()
+    //const [recipe, setRecipe] = useState()
     const [error, setError] = useState();
 
     const getRecipes = async () => {
@@ -17,8 +17,8 @@ const ComRecipes = () => {
           "Content-Type": "application/json"
         } },
    );
-      const data = await response.json();
-      setRecipes(data.hits);
+      
+      setRecipes(response.data.data);
     }
 
     useEffect(() => {
@@ -27,7 +27,7 @@ const ComRecipes = () => {
 
     const deleteRecipe = async (id) =>{
       try {
-        await fetch(`${BASE_URL}/api/recipes/:id`, {
+        await fetch(`${BASE_URL}/recipes/:id`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
