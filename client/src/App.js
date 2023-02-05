@@ -4,6 +4,8 @@ import RecipeSearch from "./RecipeSearch";
 import './index.css'
 import Nav from './Nav'
 import RecipeForm from './RecipeForm'
+import Header from './Header'
+import ComRecipes from './ComRecipes'
 
 
 
@@ -15,26 +17,32 @@ const App = () => {
   
   return (
     <div className="App">
-   {<BrowserRouter>   
+      
+   <BrowserRouter>   
     <Routes>
      
       <Route path="/search" element={<RecipeSearch />} />
       <Route path="/community" element={<RecipeForm />} />
 
     </Routes>
-    </BrowserRouter>   }
+    </BrowserRouter> 
+    
+    <Header></Header>
+   
+   <RecipeForm></RecipeForm>
+    
 
-    <Nav></Nav>
+    
 
    
      
 
-     <RecipeSearch></RecipeSearch>
+     
      
     
-      <h1 className="text-green-600">Eat ASAP app</h1>
+      
 
-      <RecipeForm></RecipeForm>
+      
     
 
     

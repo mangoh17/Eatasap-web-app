@@ -2,7 +2,7 @@
 
 const Recipe = ({title, image, ingredients}) => {
     return (
-        <div className="recipe">
+        <div className="recipe-tab">
             <h1>{title}</h1>
             <ol>
                 {ingredients.map (ingredient => (

@@ -7,20 +7,10 @@ const RecipeForm = () => {
       title: '',
       ingredients: ''
   })
-  const [recipes, setRecipes] = useState([])
+  
   const [error, setError] = useState('')
 
-  useEffect(() => {
-    const fetchRecipes = async () => {
-      const response = await fetch(`${BASE_URL}/api/recipes`);
-      const data = await response.json();
-      const recipes = data.recipes
-
-      setRecipes(recipes)
-    }
-
-    fetchRecipes()
-  }, []);
+  
 
   const addRecipe = async () => {
     try {
@@ -37,21 +27,7 @@ const RecipeForm = () => {
     } 
 };
 
-  const deleteRecipe = async (id) =>{
-    try {
-      await fetch(`${BASE_URL}/api/recipes/:id`, {
-          method: "DELETE",
-          headers: {
-              "Content-Type": "application/json"
-          },
-          body: JSON.stringify({ input: recipe})
-      })
-
-      window.location.reload()
-    } catch(error) {
-        setError('Oops...something went wrong')
-    }
-  }
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -68,24 +44,15 @@ const RecipeForm = () => {
   }
   
   return (
-    <div className="Add-recipe">
-      <section>
-        <h2>Recipes</h2>
+    <div className="recipe">
+      
+        <h2 className="h2-header">Recipes</h2>
 
-        {error && <div><p>{error}</p></div>}
+      
 
-        <ul>
-          {recipes.map(recipe => (
-            <li key={recipe.id}>
-              <span>{recipe.title} - {recipe.ingredients}</span>
-              <button onClick={() => deleteRecipe(recipe.id)}>X</button>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <form className="Recipe-form" onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
         <label>Recipe Title</label>
+        <div className='input-item'>
         <input
           onChange={handleChange}
           name="title"
@@ -93,15 +60,18 @@ const RecipeForm = () => {
           type="text"
           placeholder="Recipe title"
         />
+        </div>
 
+        <div className='input-item'>  
         <label>Ingredients</label>
-        <input
+        <textarea
           onChange={handleChange}
           name="ingredients"
           value={recipe.ingredients}
           type="text"
           placeholder="Ingredients"
         />
+        </div>
 
         <button type="submit">Submit</button>
       </form>

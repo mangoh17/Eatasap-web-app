@@ -3,9 +3,22 @@ var router = express.Router();
 var db = require("../model/helper");
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/', async (req, res, next) => {
+  try {
+    const response = await db(`SELECT * FROM recipes `);
+    const recipe = response.data[0];
+
+    if (!recipe) {
+      res.status(404).send();
+      return;
+    }
+    res.status(200).send({recipe})
+    
+  } catch (err) {
+    res.status(500).send(err);
+  }
 });
+
 
 router.post("/", async (req, res, next) => {
   const title = req.body.title;
