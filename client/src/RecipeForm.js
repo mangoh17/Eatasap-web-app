@@ -46,7 +46,7 @@ const RecipeForm = () => {
   return (
     <div className="recipe">
       
-        <h2 className="h2-header">Recipes</h2>
+        <h2 className="h2-header">.</h2>
 
       
 

@@ -6,7 +6,7 @@ var db = require("../model/helper");
 router.get('/', async (req, res, next) => {
   try {
     const response = await db(`SELECT * FROM recipes `);
-    const recipe = response.data[0];
+    const recipe = response.data;
 
     if (!recipe) {
       res.status(404).send();

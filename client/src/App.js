@@ -29,7 +29,13 @@ const App = () => {
     
     <Header></Header>
    
-   <RecipeForm></RecipeForm>
+  <ComRecipes></ComRecipes>
+
+   
+
+   
+
+   
     
 
     
