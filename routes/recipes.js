@@ -48,7 +48,7 @@ router.delete("/:id", async (req, res) => {
       res.status(404).send();
       return;
     }
-    await db(`DELETE FROM students WHERE id =${id}`)
+    await db(`DELETE FROM recipes WHERE id =${id}`)
     res.status(200).send({message: "recipe deleted"});
   } catch (err) {
     res.status(500).send(err);

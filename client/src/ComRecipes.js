@@ -7,7 +7,6 @@ const BASE_URL = 'http://localhost:5050/api'
 const ComRecipes = () => {
 
     const [recipes, setRecipes] = useState([]);
-    //const [recipe, setRecipe] = useState()
     const [error, setError] = useState();
 
     const getRecipes = async () => {
@@ -27,7 +26,7 @@ const ComRecipes = () => {
 
     const deleteRecipe = async (id) =>{
       try {
-        await fetch(`${BASE_URL}/recipes/:id`, {
+        await fetch(`${BASE_URL}/recipes/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
@@ -50,7 +49,7 @@ const ComRecipes = () => {
         <div>
 
         
-        <h2>Recipes</h2>
+        <h2>.</h2>
 
        
 
