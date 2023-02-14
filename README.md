@@ -1,4 +1,4 @@
-# Eat ASAP App (name to be changed)
+# Quick Bites App 
 
 ## Idea behind the App
 This app is designed to make recipe hunting easier and quicker.
@@ -8,6 +8,13 @@ The app aims to include:
 - Filter results by allergies and dietary needs
 - A sign up and login page
 - An area for saved recipes which can be referred back to later
+
+## Technologies Used
+- React.js
+- React Native
+- Express.js
+- MySQL
+- CSS (soon to changed to styling with Tailwind)
 
 ## App flow
 Below is the user flow of the app
