@@ -52,7 +52,7 @@ body{
       float: right;
     }
   }
-/*
+
 form {
 
     min-height: 10vh;
@@ -65,7 +65,7 @@ form {
     border: 2px solid #f3e8e8;
     border-radius: 30px;
     
-}*/
+}
 
 form {
   padding: 14px 14px;
@@ -95,10 +95,6 @@ form {
   margin: auto;
   width: 100%;
   text-align: center;
-  
-  
-  
-
 
 }
 

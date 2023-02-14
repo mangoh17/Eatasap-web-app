@@ -24,5 +24,11 @@ Below are the API routes for the app
 
 [![Hc0T4YG.md.png](https://iili.io/Hc0T4YG.md.png)](https://freeimage.host/i/Hc0T4YG)
 
+## Setup
+- Clone the repository.
+- On your computer terminal, inside the project folder, run the command yarn start. 
+- Then cd into the client folder and run yarn start.
+
+
 
 _This is a student project that was created at [CodeOp](http://codeop.tech), a full stack development bootcamp in Barcelona._

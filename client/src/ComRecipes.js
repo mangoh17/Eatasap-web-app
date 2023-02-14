@@ -56,11 +56,11 @@ const ComRecipes = () => {
         <div className="recipe-tab">
           {recipes.map(recipe => (
             <div key={recipe.id}>
-              <h2 className="recipe-title">{recipe.title}</h2>
-               <ul className="recipe-ingredients">
+              <h2 className="text-center">{recipe.title}</h2>
+               <ul className="text-center">
                 <li>{recipe.ingredients}</li>
                 </ul>
-                <button onClick={() => deleteRecipe(recipe.id)}>X</button>
+                <button className="text-center" onClick={() => deleteRecipe(recipe.id)}>X</button>
               </div>
             ))}
           </div>
